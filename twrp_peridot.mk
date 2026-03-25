@@ -6,18 +6,15 @@
 
 DEVICE_PATH := device/xiaomi/peridot
 
-# Inherit from peridot  device
+# Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
-
-# Configure twrp common.mk
-$(call inherit-product, vendor/pb/config/common.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := peridot
 
 ## Device identifier
 PRODUCT_DEVICE := peridot
-PRODUCT_NAME := pb_peridot
+PRODUCT_NAME := twrp_peridot
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := RedmiTurbo3
 PRODUCT_MANUFACTURER := Xiaomi
